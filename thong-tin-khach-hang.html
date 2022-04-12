@@ -158,7 +158,8 @@
 		</header>
 		<main>
 			<div class="wrapper-main">
-				<div id="sidebar-nav"> 
+				<div id="sidebar-nav">
+					<div class="open-sidebar"> <em class="material-icons">keyboard_arrow_right</em></div>
 					<div class="sidebar">
 						<div class="arrow-right"> <img src="./images/icons/right.svg" alt=""></div>
 						<div class="sidebar-title"> <a href=""> <img class="icon" src="./images/icons/sidebar-1.svg" alt=""></a>
@@ -189,7 +190,7 @@
 						</div>
 					</div>
 					<div class="sidebar-mega">
-						<div class="sidebar-up_header"> 
+						<div class="sidebar-mega_header"> 
 							<div class="arrow-right"> <img src="./images/icons/right.svg" alt=""></div>
 							<div class="sidebar-title"><a href=""> <img class="icon" src="./images/icons/sidebar-1.svg" alt=""></a>
 								<div class="back-side d-flex align-items-center"> <em class="material-icons">arrow_back</em><span>Quay lại</span></div>
@@ -201,6 +202,8 @@
 								</form>
 								<p>Tất cả các yêu cầu</p>
 							</div>
+						</div>
+						<div class="sidebar-mega_body">
 							<ul class="side-nav">
 								<li class="side-item"><a href=""> <img class="icon" src="./images/icons/sidebar-2.svg" alt=""><span>Mở CIF</span></a></li>
 								<li class="side-item"><a href=""> <img class="icon" src="./images/icons/sidebar-3.svg" alt=""><span>TK tiết kiệm</span></a></li>
@@ -251,7 +254,11 @@
 										<p>Nguyễn Anh Khoa</p>
 									</div>
 									<div class="customer-core"> 
-										<p>Mã Khách hàng:</p><span>00169235</span>
+										<p>Mã Khách hàng:</p><span>00169235</span><img class="icon" src="./images/icons/sim.svg" alt="">
+									</div>
+									<div class="customer-status d-flex align-items-center"> 
+										<p>Tình trạng: </p>
+										<div class="status green"> <span>Active</span></div>
 									</div>
 								</div>
 								<div class="info-detail"> 
@@ -313,7 +320,7 @@
 											<td>12/10/2000</td>
 										</tr>
 									</table>
-								</div><a class="btn btn-login" href=""> <em class="material-icons">format_list_bulleted</em><span>Các yêu cầu cần xử lý (02)</span></a>
+								</div><a class="btn btn-login" href="yeu-cau-xu-ly.html"> <em class="material-icons">format_list_bulleted</em><span>Các yêu cầu cần xử lý (02)</span></a>
 							</div>
 						</div>
 						<div class="wrap-right"> 
@@ -321,7 +328,6 @@
 								<ul class="nav d-flex align-items-center">
 									<li class="active"><a href="thong-tin-khach-hang.html">Thông tin tổng hợp</a></li>
 									<li><a href="khach-hang-lien-quan.html">Khách hàng liên quan</a></li>
-									<li><a href="yeu-cau-cho-xu-ly-kh.html">Các yêu cầu xử lý (02)</a></li>
 								</ul>
 								<div class="wrap-right_container--content">
 									<div class="content-top d-flex align-items-center justify-content-between">
@@ -462,6 +468,9 @@
 													<div class="title"><span>Loại TK</span><span> <img src="./images/icons/sort.svg" alt=""></span></div>
 												</th>
 												<th> 
+													<div class="title"><span>Trạng thái</span><span> <img src="./images/icons/sort.svg" alt=""></span></div>
+												</th>
+												<th> 
 													<div class="title"> <span>Loại tiền</span></div>
 												</th>
 												<th> 
@@ -507,6 +516,10 @@
 											<tr> 
 												<td>1</td>
 												<td> <span data-fancybox="tien-gui-0" data-src="#popup-detail" data-touch="false">00270489653214</span></td>
+												<td>
+													<div class="status gray status-color__black"><span>Tạm khóa</span></div>
+													<div class="status green-4 status-color__white"><span>Active</span></div>
+												</td>
 												<td>Thông thường/ ismart/skyone</td>
 												<td>VND</td>
 												<td>50,000,000</td>
@@ -528,6 +541,10 @@
 											<tr> 
 												<td>1</td>
 												<td> <span data-fancybox="tien-gui-1" data-src="#popup-detail" data-touch="false">00270489653214</span></td>
+												<td>
+													<div class="status gray status-color__black"><span>Tạm khóa</span></div>
+													<div class="status green-4 status-color__white"><span>Active</span></div>
+												</td>
 												<td>Thông thường/ ismart/skyone</td>
 												<td>VND</td>
 												<td>50,000,000</td>
@@ -549,6 +566,10 @@
 											<tr> 
 												<td>1</td>
 												<td> <span data-fancybox="tien-gui-2" data-src="#popup-detail" data-touch="false">00270489653214</span></td>
+												<td>
+													<div class="status gray status-color__black"><span>Tạm khóa</span></div>
+													<div class="status green-4 status-color__white"><span>Active</span></div>
+												</td>
 												<td>Thông thường/ ismart/skyone</td>
 												<td>VND</td>
 												<td>50,000,000</td>
@@ -570,6 +591,10 @@
 											<tr> 
 												<td>1</td>
 												<td> <span data-fancybox="tien-gui-3" data-src="#popup-detail" data-touch="false">00270489653214</span></td>
+												<td>
+													<div class="status gray status-color__black"><span>Tạm khóa</span></div>
+													<div class="status green-4 status-color__white"><span>Active</span></div>
+												</td>
 												<td>Thông thường/ ismart/skyone</td>
 												<td>VND</td>
 												<td>50,000,000</td>
@@ -591,6 +616,10 @@
 											<tr> 
 												<td>1</td>
 												<td> <span data-fancybox="tien-gui-4" data-src="#popup-detail" data-touch="false">00270489653214</span></td>
+												<td>
+													<div class="status gray status-color__black"><span>Tạm khóa</span></div>
+													<div class="status green-4 status-color__white"><span>Active</span></div>
+												</td>
 												<td>Thông thường/ ismart/skyone</td>
 												<td>VND</td>
 												<td>50,000,000</td>
@@ -612,6 +641,10 @@
 											<tr> 
 												<td>1</td>
 												<td> <span data-fancybox="tien-gui-5" data-src="#popup-detail" data-touch="false">00270489653214</span></td>
+												<td>
+													<div class="status gray status-color__black"><span>Tạm khóa</span></div>
+													<div class="status green-4 status-color__white"><span>Active</span></div>
+												</td>
 												<td>Thông thường/ ismart/skyone</td>
 												<td>VND</td>
 												<td>50,000,000</td>
