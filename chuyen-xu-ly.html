@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Chờ xử lý</title>
+		<title>Chuyển xử lý</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="">
 		<meta name="keywords" content="">
@@ -250,7 +250,7 @@
 						<li class="breadcrumb-item"><a href="">STK 1 tháng đến hạn, STK đảm bảo cho khoản vay của doanh nghiệp, đã báo chuyên viên KHDN Lương Tiến Thạnh. Công ty sẽ chuyển tiền về thanh...</a></li>
 					</ol><a class="back-up" href=""> <em class="material-icons">arrow_back</em><span>Quay lại</span></a>
 				</div>
-				<section class="waiting-processing">
+				<section class="waiting-processing transfer-handle">
 					<div class="wrapper-contianer">
 						<div class="wrap-header"> 
 							<p class="title">Mã yêu cầu: 202203310250xxx  -  Mã KH36958713</p>
@@ -328,16 +328,15 @@
 								<div class="form-row row">
 									<div class="form-group col-lg-12"> 
 										<label for="">Ghi chú</label>
-										<textarea class="form-control" name="" cols="30" rows="10" placeholder="Khách hàng sẽ tất toán số tiền hiện tại và gửi thêm 5 tỷ, Thứ 2 ngày 14/2/2022 sẽ lên quầy "></textarea>
+										<textarea class="form-control" disabled name="" cols="30" rows="10" placeholder="Khách hàng sẽ tất toán số tiền hiện tại và gửi thêm 5 tỷ, Thứ 2 ngày 14/2/2022 sẽ lên quầy "></textarea>
 									</div>
 									<div class="form-group col-lg-12"> 
 										<label for="">Nội dung trao đổi (chỉ người gửi và người nhận thấy)</label>
-										<textarea class="form-control" name="" cols="30" rows="10" placeholder="Khách hàng sẽ tất toán số tiền hiện tại và gửi thêm 5 tỷ, Thứ 2 ngày 14/2/2022 sẽ lên quầy "></textarea>
+										<textarea class="form-control" disabled name="" cols="30" rows="10" placeholder="Khách hàng sẽ tất toán số tiền hiện tại và gửi thêm 5 tỷ, Thứ 2 ngày 14/2/2022 sẽ lên quầy "></textarea>
 									</div>
 								</div>
 								<div class="button-bottom"> 
-									<button class="btn btn-handle btn-handle_gray btn-handle_color-gray" data-src="#popup-finish" data-fancybox=""> <img src="./images/icons/check.svg" alt=""><span>Kết thúc</span></button>
-									<button class="btn btn-handle btn-handle_blue-4 btn-handle_color-white" data-src="#popup-openagain" data-fancybox> <img src="./images/icons/user-to.svg" alt=""><span>Mở lại yêu cầu</span></button>
+									<button class="btn btn-handle btn-handle_gray btn-handle_color-gray"><img src="./images/icons/back.svg" alt=""><span>Rút lại</span></button>
 								</div>
 								<div class="form-row row">
 									<div class="form-group col-lg-12">
@@ -441,184 +440,6 @@
 						</div>
 					</div>
 				</section>
-				<div class="popup-detail popup-finish" id="popup-finish">
-					<div class="popup-header">
-						<h2 class="title">Kết thúc</h2>
-					</div>
-					<div class="popup-main">
-						<p class="label">Đánh giá </p>
-						<div class="rate">
-							<input id="star5" type="radio" name="rate" value="5">
-							<label for="star5" title="Rất tốt">5 stars</label>
-							<input id="star4" type="radio" name="rate" value="4">
-							<label for="star4" title="Tốt">4 stars</label>
-							<input id="star3" type="radio" name="rate" value="3">
-							<label for="star3" title="Hài lòng">3 stars</label>
-							<input id="star2" type="radio" name="rate" value="2">
-							<label for="star2" title="Tệ">2 stars</label>
-							<input id="star1" type="radio" name="rate" value="1">
-							<label for="star1" title="Quá tệ">1 star</label>
-						</div>
-						<form class="wrap-form" action=""> 
-							<div class="form-group"> 
-								<label for="">Lý do</label>
-								<textarea class="form-control" name="" cols="30" rows="10" placeholder="Nhập lý do"> </textarea>
-							</div>
-						</form>
-						<div class="button-bottom">
-							<button class="btn btn-handle btn-handle_yellow btn-handle_color-white"><span>KẾT THÚC</span></button>
-						</div>
-					</div>
-				</div>
-				<div class="popup-detail popup-openagain" id="popup-openagain">
-					<div class="popup-header">
-						<h2 class="title">Mở lại yêu cầu</h2>
-					</div>
-					<div class="popup-main">
-						<form class="wrap-form" action=""> 
-							<div class="form-group"> 
-								<label for="">Ghi chú</label>
-								<textarea class="form-control" name="" cols="30" rows="10" placeholder="Nhập ghi chú"> </textarea>
-							</div>
-						</form>
-						<div class="button-bottom">
-							<button class="btn btn-handle btn-handle_red btn-handle_color-white" data-src="#popup-created" data-fancybox=""><span>MỞ LẠI</span></button>
-						</div>
-					</div>
-				</div>
-				<div class="popup-detail" id="popup-created">
-					<div class="popup-header wide"> 
-						<h2 class="title">Tạo yêu cầu</h2>
-					</div>
-					<div class="popup-main"> 
-						<div class="wide">
-							<div class="infor-created">
-								<div class="title-created">
-									<p>Thông tin người tạo</p>
-								</div>
-								<form class="wrap-form" action=""> 
-									<div class="row">
-										<div class="form-group col-lg-4">
-											<label for="">Người tạo yêu cầu:</label>
-											<input class="form-control" type="text" value="Phạm Ngọc Thanh Hương">
-										</div>
-										<div class="form-group col-lg-4"> 
-											<label for="">Email:</label>
-											<input class="form-control" type="text" value="huongpnt@hdbank.com.vn">
-										</div>
-										<div class="form-group col-lg-4">
-											<label for="">Điện thoại:</label>
-											<input class="form-control" type="text" value="+84 3999 125 412">
-										</div>
-										<div class="form-group col-lg-4">
-											<label for="">Chủ đề / Loại yêu cầu <span>*</span></label>
-											<input class="form-control" type="text" value="+84 3999 125 412">
-										</div>
-									</div>
-								</form>
-							</div>
-							<div class="request-wrap">
-								<form class="wrap-form" action="">
-									<div class="row">
-										<div class="form-group col-lg-12">
-											<label for="">Thông tin yêu cầu<span>*</span></label>
-											<input class="form-control" type="text" value="">
-										</div>
-										<div class="form-group col-lg-4">
-											<label for="">Loại Khách hàng<span>*</span></label>
-											<input class="form-control" type="text" value="KHDN">
-										</div>
-										<div class="form-group col-lg-4">
-											<label for="">Mã khách hàng<span>*</span></label>
-											<input class="form-control" type="text" value="KH36958713">
-										</div>
-										<div class="form-group col-lg-4">
-											<label for="">Tên Khách hàng</label>
-											<input class="form-control" type="text" value="Nguyễn Anh Khoa">
-										</div>
-										<div class="form-group col-lg-4">
-											<label for="">Khối phụ trách<span>*</span></label>
-											<input class="form-control" type="text" value="Khối CNTT&amp;NHĐT">
-										</div>
-										<div class="form-group col-lg-4">
-											<label for="">Phòng ban phụ trách<span>*</span></label>
-											<select name=""> 
-												<option value="">BA</option>
-												<option value="">OIT</option>
-											</select>
-										</div>
-										<div class="form-group col-lg-4">
-											<label for="">Nhân sự xử lý<span>*</span></label>
-											<input class="form-control" type="text" value="huongnt@hdbank.com.vn">
-										</div>
-										<div class="form-group col-lg-4">
-											<label for="">Thời gian phản hồi mong muốn<span>*</span></label>
-											<input class="form-control" type="date" value="">
-										</div>
-										<div class="form-group col-lg-4">
-											<label for="">Mức độ ưu tiên<span>*</span></label>
-											<select name=""> 
-												<option value="">Thấp</option>
-												<option value="">Cao</option>
-											</select>
-										</div>
-										<div class="form-group col-lg-4">
-											<label for="">Gửi mail nhắc<span>*</span></label>
-											<select name=""> 
-												<option value="">Không gửi</option>
-												<option value="">Trước 30 phút</option>
-												<option value="">Trước 1 tiếng</option>
-											</select>
-										</div>
-										<div class="form-group col-lg-12">
-											<label for="">Email Cc</label>
-											<input class="form-control" id="emailmultiple" type="text" placeholder="Email">
-										</div>
-										<div class="form-group col-lg-12">
-											<label for="">Ghi chú</label>
-											<textarea class="form-control" name="" cols="30" rows="10" placeholder="Nhập ghi chú"></textarea>
-										</div>
-										<div class="form-group col-lg-12">
-											<div class="title-filed">
-												<p>Các file kèm thêm</p>
-												<div class="button-upload">
-													<label class="custom-file-label" for=""> <img src="./images/icons/cloud-upload.svg" alt=""><span>Upload file</span></label>
-													<input class="custom-file-input" id="customFile" type="file" name="">
-												</div>
-											</div>
-											<table id="file-upload"> 
-												<thead> 
-													<tr> 
-														<th>Tên file</th>
-														<th>Loại file</th>
-														<th>Kich thước</th>
-														<th>Thao tác</th>
-													</tr>
-												</thead>
-												<tr> 
-													<td> 
-														<div class="name-file">Yeucau.xlsx (8Mb)</div>
-													</td>
-													<td> 
-														<div class="file-style"></div>
-													</td>
-													<td> 
-														<div class="file-size"> </div>
-													</td>
-													<td> <a href="" download> <img src="./images/icons/cloud-download.svg" alt=""></a></td>
-												</tr>
-											</table>
-										</div>
-									</div>
-									<div class="button-bottom"> 
-										<button class="btn btn-draw"><img src="./images/icons/draw.svg" alt=""><span>Lưu nháp</span></button>
-										<button class="btn btn-done"> <img src="./images/icons/send.svg" alt=""><span>Gửi yêu cầu</span></button>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
 			</div>
 		</main>
 		<footer> 
