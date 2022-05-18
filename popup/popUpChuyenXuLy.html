@@ -1,0 +1,80 @@
+
+<div class="popup-detail popup-transfer-handle" id="popup-detail">
+	<div class="popup-header">
+		<h2 class="title">Chuyển xử lý</h2>
+	</div>
+	<div class="popup-main">
+		<div class="radio-input">
+			<input id="ratio-1" type="radio" name="sendrequest" value=""/>
+			<label for="ratio-1">Chuyển người khác xử lý</label>
+			<input id="ratio-2" type="radio" name="sendrequest" value=""/>
+			<label for="ratio-2">Chuyển đơn vị khác xử lý</label>
+		</div>
+		<form class="wrap-form row" action=""> 
+			<div class="form-group col-lg-6"> 
+				<label for="">Khối phụ trách</label>
+				<select name=""> 
+					<option value="">Khối CNTT&NHĐT</option>
+				</select>
+			</div>
+			<div class="form-group col-lg-6"> 
+				<label for="">Phòng ban phụ trách</label>
+				<select name=""> 
+					<option value="">CoreBanking</option>
+				</select>
+			</div>
+			<div class="form-group col-lg-12"> 
+				<label for="">Nội dung trao đổi <span>(Chỉ người gửi và người nhận thấy)</span></label>
+				<textarea class="form-control" name="" cols="30" rows="10" placeholder="Nhập nội dung trao đổi"> </textarea>
+			</div>
+			<div class="form-group col-lg-12"> 
+				<label for="">Email Cc</label>
+				<input class="form-control" id="emailmultiple" type="text" placeholder="Email"/>
+			</div>
+			<div class="form-group col-lg-12"> 
+				<label for="">Ghi chú </label>
+				<textarea class="form-control" name="" cols="30" rows="10" placeholder="Nhập ghi chú"> </textarea>
+			</div>
+			<div class="form-group col-lg-12"> 
+				<div class="title-filed"> 
+					<p>Chứng từ đính kèm</p>
+					<div class="button-upload">
+						<label class="custom-file-label" for=""> <img src="./images/icons/cloud-upload.svg" alt=""/><span>Chọn file upload</span></label>
+						<input class="custom-file-input" id="customFile" type="file" name=""/><span class="desc">File format JPG, PDF, word, Excel</span>
+					</div>
+				</div>
+				<div class="wrap-table">
+					<table id="file-upload"> 
+						<thead> 
+							<tr> 
+								<th>Tên file</th>
+								<th>Loại file</th>
+								<th>Kich thước</th>
+								<th>Người tạo</th>
+								<th>Thao tác</th>
+							</tr>
+						</thead>
+						<tr> 
+							<td> 
+								<div class="name-file">Yeucau.xlsx (8Mb)</div>
+							</td>
+							<td> 
+								<div class="file-style">.docx</div>
+							</td>
+							<td> 
+								<div class="file-size">8mb</div>
+							</td>
+							<td> 
+								<div class="name-user">Nguyễn Anh Khoa</div>
+							</td>
+							<td> <a href="" download="download"> <img src="./images/icons/cloud-download.svg" alt=""/></a></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="button-bottom"> 
+				<button class="btn btn-handle btn-handle_green btn-handle_color-white" data-src="#popup-detail" data-fancybox=""> <span>Chuyển xử lý</span></button>
+			</div>
+		</form>
+	</div>
+</div>

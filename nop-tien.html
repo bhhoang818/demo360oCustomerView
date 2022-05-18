@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Chuyển xử lý</title>
+		<title>Nộp tiền</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="">
 		<meta name="keywords" content="">
@@ -13,7 +13,7 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link rel="shortcut icon" type="image/png" href="favicon.ico">
 	</head>
-	<body class="waiting-request">
+	<body class="paymentPage">
 		<header> 
 			<div class="wrap-header d-flex align-items-center">
 				<div class="wrap-header-left d-flex align-items-center"><a class="wrap-header-left_icon d-flex align-items-center justify-content-center" href=""> <img src="./images/icons/icons-windows.svg" alt=""></a>
@@ -248,197 +248,408 @@
 					</div>
 					<div class="close-box"> <em class="material-icons">expand_less</em></div>
 				</div>
-				<div class="breadcrumb-wrapper"> 
-					<ol class="breadcrumb">
-						<li class="breadcrumb-item"><a href="/"> <img src="./images/icons/home.svg" alt="">Yêu cầu đến</a></li>
-						<li class="breadcrumb-item"><a href="">STK 1 tháng đến hạn, STK đảm bảo cho khoản vay của doanh nghiệp, đã báo chuyên viên KHDN Lương Tiến Thạnh. Công ty sẽ chuyển tiền về thanh...</a></li>
-					</ol><a class="back-up" href=""> <em class="material-icons">arrow_back</em><span>Quay lại</span></a>
-				</div>
-				<section class="waiting-processing transfer-handle">
-					<div class="wrapper-contianer">
-						<div class="wrap-header"> 
-							<p class="title">Mã yêu cầu: 202203310250xxx  -  Mã KH36958713</p>
-							<p class="title">STK 1 tháng đến hạn, STK đảm bảo cho khoản vay của doanh nghiệp</p>
+				<section class="header-menu">
+					<div class="wrapper-container">
+						<div class="tabs-menu">
+							<ul class="tab-list d-flex align-items-center">
+								<li class="active"><a class="wrapper-content bg-red d-flex align-items-center" href="yeu-cau-den.html">
+										<div class="icon"> <img src="./images/icons/mail.svg" alt=""></div>
+										<p class="title-item">Yêu cầu đến<span>12</span></p>
+										<div class="arrow d-flex align-items-center"> <em class="material-icons">chevron_right</em></div></a></li>
+								<li><a class="wrapper-content bg-blue d-flex align-items-center" href="yeu-cau-di.html">
+										<div class="icon"> <img src="./images/icons/mail-1.svg" alt=""></div>
+										<p class="title-item">Yêu cầu đi<span>95</span></p>
+										<div class="arrow d-flex align-items-center"> <em class="material-icons">chevron_right</em></div></a></li>
+								<li><a class="wrapper-content bg-green d-flex align-items-center" href="luu-nhap.html">
+										<div class="icon"> <img src="./images/icons/save-draft.svg" alt=""></div>
+										<p class="title-item">Lưu nháp<span>03</span></p>
+										<div class="arrow d-flex align-items-center"> <em class="material-icons">chevron_right</em></div></a></li>
+								<li><a class="wrapper-content bg-orange d-flex align-items-center" href="yeu-cau-tu-khach-hang.html">
+										<div class="icon"> <img src="./images/icons/mail-2.svg" alt=""></div>
+										<p class="title-item">Yêu cầu từ Khách hàng<span>07</span></p>
+										<div class="arrow d-flex align-items-center"> <em class="material-icons">chevron_right</em></div></a></li>
+							</ul>
 						</div>
-						<div class="wrap-body">
-							<div class="infor-created">
-								<div class="title-created">
-									<p>Thông tin người tạo</p>
-								</div>
-								<form class="wrap-form" action=""> 
-									<div class="row">
-										<div class="form-group col-lg-4">
-											<label for="">Người tạo yêu cầu:</label>
-											<input class="form-control" type="text" value="Phạm Ngọc Thanh Hương">
+					</div>
+				</section>
+				<section class="info-customer-page payment-section">
+					<div class="container-fluid">
+						<div class="row"> 
+							<div class="col-xxl-3 col-xl-12 wrap-left"> 
+								<div class="info-wrapper">
+									<div class="info-general"> 
+										<div class="img"><img class="avatar" src="./images/info-custome/avatar.png" alt=""><img class="icon" src="./images/icons/sim.svg" alt=""></div>
+										<div class="customer-name"> 
+											<p>Nguyễn Anh Khoa</p>
 										</div>
-										<div class="form-group col-lg-4"> 
-											<label for="">Email:</label>
-											<input class="form-control" type="text" value="huongpnt@hdbank.com.vn">
+										<div class="customer-core"> 
+											<p>Mã Khách hàng:</p>
+											<div class="status yellow status-color__black"><span>00169235</span></div>
 										</div>
-										<div class="form-group col-lg-4">
-											<label for="">Điện thoại:</label>
-											<input class="form-control" type="text" value="+84 3999 125 412">
-										</div>
-										<div class="form-group col-lg-4">
-											<label for="">Chủ đề / Loại yêu cầu <span>*</span></label>
-											<input class="form-control" type="text" value="+84 3999 125 412">
+										<div class="customer-status d-flex align-items-center"> 
+											<p>Tình trạng: </p>
+											<div class="status green status-color__white"> <span>Active</span></div>
 										</div>
 									</div>
-								</form>
-							</div>
-							<form class="wrap-form" action=""> 
-								<div class="form-row row">
-									<div class="form-group col-lg-6"> 
-										<label for="">Loại Khách hàng</label>
-										<input class="form-control" type="text" value="0123456" disabled>
-									</div>
-									<div class="form-group col-lg-3"> 
-										<label for="">Mã khách hàng</label>
-										<input class="form-control" type="text" value="KH36958713" disabled>
-									</div>
-									<div class="form-group col-lg-3">
-										<label for="">Tên Khách hàng</label>
-										<input class="form-control" type="text" value="Nguyễn Anh Khoa" disabled>
-									</div>
-								</div>
-								<div class="form-row row">
-									<div class="form-group col-lg-6">
-										<label for="">Khối phụ trách</label>
-										<input class="form-control" type="text" value="Khối CNTT&amp;NHĐT" disabled>
-									</div>
-									<div class="form-group col-lg-3">
-										<label for="">Phòng ban phụ trách</label>
-										<input class="form-control" type="text" value="huongnt@hdbank.com.vn" disabled>
-									</div>
-									<div class="form-group col-lg-3">
-										<label for="">Nhân sự phụ trách</label>
-										<input class="form-control" type="text" value="huongnt@hdbank.com.vn" disabled>
-									</div>
-								</div>
-								<div class="form-row row">
-									<div class="form-group col-lg-6"> 
-										<label for="">Thời gian phản hồi mong muốn</label>
-										<input class="form-control" type="date" value="" disabled>
-									</div>
-									<div class="form-group col-lg-3"> 
-										<label for="">Mức độ ưu tiên</label>
-										<div class="level-light d-flex align-items-center"><span class="dot green"> </span><span class="txt">Thấp</span></div>
-									</div>
-									<div class="form-group col-lg-3">
-										<label for="">Gửi mail nhắc </label>
-										<input class="form-control" type="text" value="huongnt@hdbank.com.vn" disabled>
-									</div>
-								</div>
-								<div class="form-row row">
-									<div class="form-group col-lg-12"> 
-										<label for="">Ghi chú</label>
-										<textarea class="form-control" disabled name="" cols="30" rows="10" placeholder="Khách hàng sẽ tất toán số tiền hiện tại và gửi thêm 5 tỷ, Thứ 2 ngày 14/2/2022 sẽ lên quầy "></textarea>
-									</div>
-									<div class="form-group col-lg-12"> 
-										<label for="">Nội dung trao đổi (chỉ người gửi và người nhận thấy)</label>
-										<textarea class="form-control" disabled name="" cols="30" rows="10" placeholder="Khách hàng sẽ tất toán số tiền hiện tại và gửi thêm 5 tỷ, Thứ 2 ngày 14/2/2022 sẽ lên quầy "></textarea>
-									</div>
-								</div>
-								<div class="button-bottom"> 
-									<button class="btn btn-handle btn-handle_gray btn-handle_color-gray"><img src="./images/icons/back.svg" alt=""><span>Rút lại</span></button>
-								</div>
-								<div class="form-row row">
-									<div class="form-group col-lg-12">
-										<div class="title-filed">
-											<p>Các file kèm thêm</p>
-											<div class="button-upload">
-												<label class="custom-file-label" for=""> <img src="./images/icons/cloud-upload.svg" alt=""><span>Upload file</span></label>
-												<input class="custom-file-input" id="customFile" type="file" name="">
-											</div>
-										</div>
-										<table id="file-upload"> 
-											<thead> 
+									<div class="info-detail">
+										<div class="wrap-table"> 
+											<table> 
 												<tr> 
-													<th>Tên file</th>
-													<th>Loại file</th>
-													<th>Kich thước</th>
-													<th>Thao tác</th>
+													<td>Hạng Premier:</td>
+													<td>VIP</td>
 												</tr>
-											</thead>
-											<tr> 
-												<td> 
-													<div class="name-file">Yeucau.xlsx (8Mb)</div>
-												</td>
-												<td> 
-													<div class="file-style"></div>
-												</td>
-												<td> 
-													<div class="file-size"> </div>
-												</td>
-												<td> <a href="" download> <img src="./images/icons/cloud-download.svg" alt=""></a></td>
-											</tr>
-										</table>
+												<tr> 
+													<td>Điểm XHTD:</td>
+													<td>100</td>
+												</tr>
+												<tr> 
+													<td>Số GTTT:</td>
+													<td> <span data-fancybox="info-popup" data-src="#popup-infor">02546987 (CMND)</span></td>
+												</tr>
+												<tr> 
+													<td>Ngày sinh:</td>
+													<td>12/10/1961</td>
+												</tr>
+												<tr> 
+													<td>Tuổi - Giới tính:</td>
+													<td>30 - Nam</td>
+												</tr>
+												<tr> 
+													<td>Chỗ ở hiện tại:</td>
+													<td>174 Phan Đăng Lưu, Phường 3, Quận Phú Nhuận, Tp.Hồ Chí Minh</td>
+												</tr>
+												<tr> 
+													<td>Số điện thoại:</td>
+													<td>*******999</td>
+												</tr>
+												<tr> 
+													<td>Email:</td>
+													<td>anv@gmail.com</td>
+												</tr>
+												<tr> 
+													<td>Giấy tờ khác:</td>
+													<td> <a href="javascript:;" data-fancybox="info-popup" data-src="#popup-infor"> Chi tiết</a></td>
+												</tr>
+												<tr> 
+													<td>Trình độ học vấn:</td>
+													<td>Đại học</td>
+												</tr>
+												<tr> 
+													<td>Nghề nghiêp:</td>
+													<td>Giám đốc Marketing</td>
+												</tr>
+												<tr> 
+													<td>Tình trạng hôn nhân:</td>
+													<td>Đã kết hôn</td>
+												</tr>
+												<tr> 
+													<td>Đơn vị mở CIF:</td>
+													<td>--</td>
+												</tr>
+												<tr> 
+													<td>Ngày mở CIF:</td>
+													<td>12/10/2000</td>
+												</tr>
+											</table>
+										</div>
+										<div class="wrap-button">
+											<div class="accessed-infor"><em class="material-icons">check_circle_outline</em><span>Đã xác thực KYC tại quầy</span></div><a class="btn btn-login" href="yeu-cau-den.html"> <span>Yêu cầu cần xử lý (02)</span></a>
+										</div>
 									</div>
 								</div>
-							</form>
-							<div class="history-list"> 
-								<div class="history-list_header d-flex align-items-center justify-content-between"> 
-									<p>Lịch sử phê duyệt</p><em class="material-icons">expand_more</em>
-								</div>
-								<div class="history-list_main"> 
-									<ul class="list-history"> 
-										<li class="active"> 
-											<div class="date-time"> 
-												<p class="date">13/09/2020</p>
-												<p class="time">14:00</p>
-											</div>
-											<div class="content"> 
-												<div class="title"> 
-													<p>HD000775 Nguyễn Tấn Lực - KCNTT-NHĐT - Đang đợi xử lý</p>
-												</div>
-												<div class="sub-title"> 
-													<p>Amet minim mollit non de....</p>
-												</div>
-											</div>
-										</li>
-										<li> 
-											<div class="date-time"> 
-												<p class="date">13/09/2020</p>
-												<p class="time">14:00</p>
-											</div>
-											<div class="content"> 
-												<div class="title"> 
-													<p>HD000775 Nguyễn Tấn Lực - KCNTT-NHĐT - Đang đợi xử lý</p>
-												</div>
-												<div class="sub-title"> 
-													<p>Amet minim mollit non de....</p>
-												</div>
-											</div>
-										</li>
-										<li> 
-											<div class="date-time"> 
-												<p class="date">13/09/2020</p>
-												<p class="time">14:00</p>
-											</div>
-											<div class="content"> 
-												<div class="title"> 
-													<p>HD000775 Nguyễn Tấn Lực - KCNTT-NHĐT - Đang đợi xử lý</p>
-												</div>
-												<div class="sub-title"> 
-													<p>Amet minim mollit non de....</p>
-												</div>
-											</div>
-										</li>
-										<li> 
-											<div class="date-time"> 
-												<p class="date">13/09/2020</p>
-												<p class="time">14:00</p>
-											</div>
-											<div class="content"> 
-												<div class="title"> 
-													<p>HD000775 Nguyễn Tấn Lực - KCNTT-NHĐT - Đang đợi xử lý</p>
-												</div>
-												<div class="sub-title"> 
-													<p>Amet minim mollit non de....</p>
-												</div>
-											</div>
-										</li>
+							</div>
+							<div class="col-xxl-9 col-xl-12 wrap-right"> 
+								<div class="step-section"> 
+									<h1 class="section-title text-center">NỘP TIỀN</h1>
+									<ul class="progress-wrap">
+										<li class="step active"><a class="step_child" href="tao-chien-luoc.html">
+												<div class="icon disable"><img src="./images/icons/set-1.svg" alt=""></div>
+												<div class="icon created"><img src="./images/icons/set-1_1.svg" alt=""></div>
+												<div class="icon finished"><img src="./images/icons/set-1_2.svg" alt=""></div>
+												<div class="content">
+													<p>Thông tin giao dịch</p>
+												</div></a></li>
+										<li class="step"> <a class="step_child" href="chon-nhom-khach-hang.html">
+												<div class="icon disable"><img src="./images/icons/set-2.svg" alt=""></div>
+												<div class="icon created"><img src="./images/icons/set-2_1.svg" alt=""></div>
+												<div class="icon finished"><img src="./images/icons/set-2_2.svg" alt=""></div>
+												<div class="content">
+													<p>Bảng kê tiền</p>
+												</div></a></li>
+										<li class="step"> <a class="step_child" href="thiet-lap-nhom-giai-thuong.html">
+												<div class="icon disable"><img src="./images/icons/set-3.svg" alt=""></div>
+												<div class="icon created"><img src="./images/icons/set-3_1.svg" alt=""></div>
+												<div class="icon finished"><img src="./images/icons/set-3_2.svg" alt=""></div>
+												<div class="content">
+													<p>In bảng kê tiền và KH ký tên</p>
+												</div></a></li>
+										<li class="step"> <a class="step_child" href="chon-giao-dien.html">
+												<div class="icon disable"><img src="./images/icons/set-4.svg" alt=""></div>
+												<div class="icon created"><img src="./images/icons/set-4_1.svg" alt=""></div>
+												<div class="icon finished"><img src="./images/icons/set-4_2.svg" alt=""></div>
+												<div class="content">
+													<p>Gửi duyệt</p>
+												</div></a></li>
 									</ul>
+								</div>
+								<div class="wrap-right_body"> 
+									<div class="wrap-form">
+										<form class="row" action="" method="method">
+											<div class="col-lg-6">
+												<div class="form-group disabled"> 
+													<label for="name">Branch (Chi nhánh)</label>
+													<div class="input">
+														<input class="form-control" type="name" disabled name="name" placeholder="002 - Phú Nhuận - Hồ Chí Minh">
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-6">
+												<div class="form-group disabled"> 
+													<label for="name">Account Desc  (Tên TK)</label>
+													<div class="input">
+														<input class="form-control" type="name" disabled name="name" placeholder="NGUYEN THANH KIET">
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-12">
+												<div class="form-group disabled">
+													<label for="name">Account type (Loại TK)</label>
+													<div class="input">
+														<input class="form-control" type="name" disabled name="name" placeholder="700 - TK tiền gửi thông thường">
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-6">
+												<div class="form-group disabled"> 
+													<label for="name">Currency (Tiền tệ)</label>
+													<div class="input">
+														<input class="form-control" type="name" disabled name="name" placeholder="VND">
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-6">
+												<div class="form-group disabled"> 
+													<label for="name">Account No (Số TK)</label>
+													<div class="input">
+														<input class="form-control mr-3" type="name" disabled name="name" placeholder="0039568123456789"><span class="box-smal ms-3"></span><span class="box-smal ms-3">A</span><span class="box-smal ms-3">Active</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-6">
+												<div class="form-group disabled"> 
+													<label for="name">Availlable Ballance (Số dư khả dụng)</label>
+													<div class="input">
+														<input class="form-control" type="name" disabled name="name" placeholder="1.605.718.500.400 VND" value="1.605.718.500.400 VND"><span class="unit">CR</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-6">
+												<div class="form-group disabled"> 
+													<label for="name">Ledger Ballance (Số dư kế toán)</label>
+													<div class="input">
+														<input class="form-control" type="name" disabled name="name" placeholder="1.605.718.500.400 VND" value="1.605.718.500.400 VND"><span class="unit">CR</span>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+									<div class="wrap-form">
+										<div class="title-form"> <img src="./images/icons/fire.svg" alt=""><span>Thông tin cảnh báo</span></div>
+										<form class="row" action="" method="method">
+											<div class="col-lg-6">
+												<div class="form-group disabled">
+													<div class="group-left">
+														<label for="name">Restraint Type</label>
+														<div class="input"><span class="box-smal">FH1</span>
+															<input class="form-control ms-3" type="name" disabled name="name" placeholder="Phong tỏa số dư TK">
+														</div>
+													</div>
+													<div class="group-right ms-3">
+														<label for="name">Class</label>
+														<div class="input"><span class="box-smal">FH</span></div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-6"> 
+												<div class="form-group">
+													<div class="group">
+														<label for="name">Seq No. Start Date</label>
+														<div class="input">
+															<input class="form-control" type="name" name="name" placeholder="129324484" value="129324484">
+														</div>
+													</div>
+													<div class="group ms-3">
+														<label for="name">End Date</label>
+														<div class="input">
+															<input class="form-control" type="name" name="name" placeholder="23/082019" value="23/082019">
+														</div>
+													</div>
+													<div class="group ms-3">
+														<label for="name">Mod ID</label>
+														<div class="input"><span class="box-smal disabled">Mod ID</span></div>
+													</div>
+													<div class="group ms-3">
+														<label for="name">Status</label>
+														<div class="input"><span class="box-smal disabled">E</span></div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-6"> 
+												<div class="form-group">
+													<label for="name">Last change Officer</label>
+													<input class="form-control" type="name" disabled name="name" placeholder="TL_HD8875">
+													<div class="input"><span class="box-smal">FH1</span>
+														<input class="form-control ms-3" type="name" disabled name="name" placeholder="Phong tỏa số dư TK" value="Phong tỏa số dư TK"><span class="box-smal ms-3">FH</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-6"> 
+												<div class="form-group">
+													<label for="name">Override Officer</label>
+													<input class="form-control" type="name" disabled name="name" placeholder="SP_NHUNGDLH">
+													<div class="input">
+														<input class="form-control" type="text" name="" value="129324484">
+														<input class="form-control ms-3" type="name" name="name" placeholder="23/082019" value="23/082019"><span class="box-smal ms-3 disabled">BT</span><span class="box-smal ms-3 disabled">E</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-6"> 
+												<div class="form-group">
+													<label for="name">Last change Officer</label>
+													<input class="form-control" type="name" disabled name="name" placeholder="TL_HD8875" value="TL_HD011742">
+													<div class="input"><span class="box-smal">IN1</span>
+														<input class="form-control ms-3" type="name" disabled name="name" placeholder="Phong tỏa số dư TK" value="Phong tỏa số dư TK"><span class="box-smal ms-3">IN</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-6"> 
+												<div class="form-group">
+													<label for="name">Override Officer</label>
+													<input class="form-control" type="name" disabled name="name" placeholder="SP_NHUNGDLH">
+													<div class="input">
+														<input class="form-control" type="text" name="" value="129324484">
+														<input class="form-control ms-3" type="name" name="name" placeholder="23/082019" value="23/082019"><span class="box-smal ms-3 disabled">BT</span><span class="box-smal ms-3 disabled">E</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-6"> 
+												<div class="form-group disabled">
+													<label for="name">Last change Officer</label>
+													<div class="input">
+														<input class="form-control" type="name" disabled name="name" placeholder="TL_HD011742">
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-6"> 
+												<div class="form-group disabled">
+													<label for="name">Override Officer</label>
+													<div class="input">
+														<input class="form-control" type="name" disabled name="name" placeholder="SP_LINHTB1">
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+									<div class="wrap-form">
+										<form class="row" action="" method="method">
+											<div class="col-lg-12">
+												<div class="form-group">
+													<input id="otherPerson" type="checkbox">
+													<label for="otherPerson">Người khác nộp tiền </label>
+												</div>
+												<div class="form-group">
+													<label for="name">CMND/CCCD/MST:</label>
+													<div class="input ms-3">
+														<input class="form-control" type="name" name="name" placeholder="025469871235" value="025469871235">
+														<button class="btn btn-search ms-3"> <img src="./images/icons/search-black.svg" alt=""></button>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-12">
+												<table> 
+													<tr> 
+														<td>CIF:</td>
+														<td>123</td>
+													</tr>
+													<tr> 
+														<td>Người nộp tiền:</td>
+														<td>Nguyễn Anh Hoàng</td>
+													</tr>
+													<tr> 
+														<td>CNMD/HC/ID/PP No:</td>
+														<td>663849630</td>
+													</tr>
+													<tr> 
+														<td>Chỗ ở hiện tại:</td>
+														<td>174 Phan Đăng Lưu, Phường 3, Quận Phú Nhuận, Tp.Hồ Chí Minh</td>
+													</tr>
+													<tr> 
+														<td>Ngày cấp :</td>
+														<td>12/2/20215</td>
+													</tr>
+													<tr> 
+														<td>Nơi cấp:</td>
+														<td>CA TP. Hồ Chí Minh</td>
+													</tr>
+												</table>
+											</div>
+											<div class="col-lg-6"> 
+												<div class="form-group">
+													<label for="name">Transaction Atm (Số tiền giao dịch)</label>
+													<div class="input">
+														<input class="form-control" type="name" name="name" placeholder="10,000,000">
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-6"> 
+												<div class="form-group">
+													<label for="name">Rate (Tỷ giá)</label>
+													<div class="input">
+														<input class="form-control" type="name" name="name" placeholder="1.00">
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-6"> 
+												<div class="form-group">
+													<label for="name">Phí </label>
+													<div class="input">
+														<input class="form-control" type="name" name="name" placeholder="22.000">
+														<div class="radio-check ms-3">
+															<input id="radio1" type="radio" name="radio">
+															<label for="radio1">Thu phí TM</label>
+															<input id="radio2" type="radio" name="radio">
+															<label class="ms-3" for="radio2">Thu phí từ TK</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-6"> 
+												<div class="form-group">
+													<label for="name">Số tiền phải thu</label>
+													<div class="input">
+														<input class="form-control" type="name" name="name" placeholder="10.022.000">
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-6"> 
+												<div class="form-group">
+													<label for="name">Equivalent Amt (Số tiền quy đổi)</label>
+													<div class="input">
+														<input class="form-control" type="name" name="name" placeholder="10.000.000"><span class="unit">VND</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-12">
+												<div class="form-group">
+													<label for="name">Narrative (Diễn giải)</label>
+													<div class="input">
+														<textarea name="" cols="30" rows="10" placeholder="Nhập nội dung nộp tiền"></textarea>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+									<div class="wrap-button"> <a class="cancle" href=""> <em class="material-icons">close</em><span>Hủy</span></a><a class="continue" href=""> <em class="material-icons">arrow_forward</em><span>Tiếp tục</span></a></div>
 								</div>
 							</div>
 						</div>
