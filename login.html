@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Danh sách popup</title>
+		<title>Đăng nhập</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="">
 		<meta name="keywords" content="">
@@ -13,7 +13,7 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link rel="shortcut icon" type="image/png" href="favicon.ico">
 	</head>
-	<body>
+	<body class="loginpage">
 		<header> 
 			<div class="wrap-header d-flex align-items-center">
 				<div class="wrap-header-left d-flex align-items-center"><a class="wrap-header-left_icon d-flex align-items-center justify-content-center" href=""> <img src="./images/icons/icons-windows.svg" alt=""></a>
@@ -223,446 +223,36 @@
 						</div>
 					</div>
 				</div>
-				<div class="search-container"> 
-					<div class="wrapper-content"> 
-						<h2 class="search-title">Tìm kiếm khách hàng</h2>
-						<form class="wrap-form d-flex align-items-center justify-content-between" action="">
-							<div class="form-group"> 
-								<label for="">Mã khách hàng:</label>
-								<input class="form-control" type="text" placeholder="Nhập mã khách hàng">
-							</div>
-							<div class="form-group"> 
-								<label for="">CMND/CCCD/MST:</label>
-								<input class="form-control" type="text" placeholder="Nhập số CMNN/CCCD/MST">
-							</div>
-							<div class="form-group"> 
-								<label for="">Điện thoại:</label>
-								<input class="form-control" type="text" placeholder="Nhập số điện thoại">
-							</div>
-							<div class="wrap-button d-flex align-items-center"> 
-								<button class="btn btn-search" type="submit"><img src="./images/icons/search-black.svg" alt=""></button><a class="btn btn-scan handle" href=""><img src="./images/icons/handle-scan.svg" alt=""></a><a class="btn btn-scan face" href="/emty.html"><img src="./images/icons/face-scan.svg" alt=""></a>
-							</div>
-						</form>
-					</div>
-					<div class="close-box"> <em class="material-icons">expand_less</em></div>
-				</div>
-				<div class="container p-3">
-					<h3 class="pb-3">Popup mở tài khoản</h3>
-					<div class="row"> 
-						<div class="col-lg-2"><a class="btn btn-default text-center" href="" data-fancybox="" data-src="#popup-style-account"> <span>Bước 1</span></a></div>
-						<div class="col-lg-2"><a class="btn btn-default text-center" href="" data-fancybox="" data-src="#popup-number-account"> <span>Bước 2</span></a></div>
-						<div class="col-lg-2"><a class="btn btn-default text-center" href="" data-fancybox="" data-src="#popup-number-account"> <span>Bước 3</span></a></div>
-						<div class="col-lg-2"><a class="btn btn-default text-center" href="" data-fancybox="" data-src="#popup-price"> <span>Bước 4</span></a></div>
-						<div class="col-lg-2"><a class="btn btn-default text-center" href="" data-fancybox="" data-src="#popup-infor-checkout"> <span>Bước 5</span></a></div>
-						<div class="col-lg-2"><a class="btn btn-default text-center" href="" data-fancybox="" data-src="#pupopAlert"> <span>Bước 6</span></a></div>
-						<div class="col-lg-2 pt-3"><a class="btn btn-default text-center" href="" data-fancybox="" data-src="#popup-success"> <span>Thành công</span></a></div>
-						<div class="col-lg-2 pt-3"><a class="btn btn-default text-center" href="" data-fancybox="" data-src="#popup-error"> <span>Thất bại</span></a></div>
-					</div>
-				</div>
-				<div class="popup-detail style-account" id="popup-style-account">
-					<div class="popup-heading">
-						<h1 class="big-title">Lựa chọn loại tài khoản</h1>
-						<button class="btn close" data-fancybox-close> <em class="material-icons">close</em></button>
-					</div>
-					<div class="popup-body">
-						<form class="wrap-form" action=""> 
-							<div class="form-group">
-								<input id="ratio-1" type="radio" name="sendrequest" value="" checked>
-								<label for="ratio-1"> 
-									<p>Tài khoản thường</p><span>Khách hàng được cấp tài khoản theo số ngẫu nhiên</span>
-								</label>
-							</div>
-							<div class="form-group">
-								<input id="ratio-2" type="radio" name="sendrequest" value="">
-								<label for="ratio-2"> 
-									<p>Tài khoản số đẹp</p><span>Khách hàng được lựa chọn tài khoản số đẹp theo sở thích</span>
-								</label>
-							</div>
-						</form><a class="btn btn-default text-center" href="" data-fancybox data-src="#popup-number-account"><span>Tiếp tục</span></a>
-					</div>
-				</div>
-				<div class="popup-detail style-account" id="popup-number-account">
-					<div class="popup-heading">
-						<h1 class="big-title">Lựa chọn loại tài khoản </h1>
-						<button class="btn close" data-fancybox-close> <em class="material-icons">close</em></button>
-					</div>
-					<div class="popup-body"> 
-						<form class="wrap-form" id="form-ratio" action=""> 
-							<div class="form-group">
-								<label for=""> 
-									<p>Số theo sở thích</p><span>Nhập dãy số mong muốn</span>
-								</label>
-								<input class="form-control form-hidden" type="text">
-							</div>
-							<div class="form-group">
-								<label for=""> 
-									<p>Số theo số điện thoại <span>Miễn phí</span></p><span>Quý khách được HDBank tặng miễn phí số đẹp theo số điện thoại *619</span>
-								</label>
-								<input class="form-control form-hidden" type="text">
-							</div>
-							<div class="form-group">
-								<label for=""> 
-									<p>Số theo ngày sinh </p><span>Có 6 số đuôi là ngày sinh theo cấu trúc dd/mm/yy</span>
-								</label>
-								<input class="form-control form-hidden" type="text">
-							</div>
-							<div class="form-group">
-								<label for=""> 
-									<p>Số thần tài</p><span>TK có tối thiểu 4 số cuối bao gồm các cặp số 39 hoặc/và 79 như: 7979, 3939, 3979,...</span>
-								</label>
-								<input class="form-control form-hidden" type="text">
-							</div>
-							<div class="form-group">
-								<label for=""> 
-									<p>Số tứ quý </p><span>Tài khoản có tối thiểu 4 chữ số cuối giống nhau như: 1111, 2222, 3333…</span>
-								</label>
-								<input class="form-control form-hidden" type="text">
-							</div>
-							<div class="form-group">
-								<label for=""> 
-									<p>Số ngũ quý </p><span>Tài khoản có tối thiểu 5 chữ số cuối giống nhau như: 11111, 22222, 33333…</span>
-								</label>
-								<input class="form-control form-hidden" type="text">
-							</div>
-						</form><a class="btn btn-default text-center" href="/bao-gia.html"><span>Tiếp tục</span></a>
-					</div>
-				</div>
-				<div class="popup-detail style-account" id="popup-price"> 
-					<div class="popup-heading">
-						<h1 class="big-title">Lựa chọn tài khoản số đẹp </h1>
-						<button class="btn close" data-fancybox-close> <em class="material-icons">close</em></button>
-					</div>
-					<div class="popup-body"> 
-						<div class="container--tabs">
-							<ul class="nav nav-tabs d-flex align-items-center">
-								<li class="active"><a href="#form-1">Tài khoản 15 số</a></li>
-								<li><a href="#form-2">Tài khoản 10 số</a></li>
-							</ul>
-							<div class="tab-content">
-								<div class="panel active" id="form-1">
-									<form class="wrap-form" action="">
-										<div class="form-group">
-											<input class="form-control" type="text" placeholder="Quý khách nhập từ 3 - 10 ký tự">
-											<button class="btn btn-default"> <span>Tìm</span></button><a class="sort" href="">
-												 Giá<em class="material-icons">arrow_downward</em></a><span class="desc">Nhập *123 để tìm các số có đuôi 123</span>
-										</div>
-										<div class="form-group">
-											<input id="ratio-7" type="radio" name="sendrequest" value="">
-											<label for="ratio-7"> 
-												<p>Số tài khoản&nbsp;<b>99999987654321</b></p>
-											</label>
-											<div class="price">
-												<p>1,200,000,000 VND &nbsp;</p><span>1,100,000,000 VND</span>
-												<div class="hot-deal">Giá sốc</div>
-											</div>
-										</div>
-										<div class="form-group">
-											<input id="ratio-8" type="radio" name="sendrequest" value="">
-											<label for="ratio-8"> 
-												<p>Số tài khoản&nbsp;<b>99999987654321</b></p>
-											</label>
-											<div class="price">
-												<p>1,200,000,000 VND &nbsp;</p><span>0 VND</span>
-												<div class="hot-deal">Giá sốc</div>
-											</div>
-										</div>
-										<div class="form-group">
-											<input id="ratio-9" type="radio" name="sendrequest" value="">
-											<label for="ratio-9"> 
-												<p>Số tài khoản &nbsp;<b>99999987654321</b></p>
-											</label>
-											<div class="price">
-												<p>1,200,000,000 VND &nbsp;</p><span>0 VND</span>
-												<div class="hot-deal">Giá sốc</div>
-											</div>
-										</div>
-									</form>
+				<section class="login-bg"> 
+					<div class="wrapper-container d-flex align-items-center"> 
+						<div class="wrapper-left">
+							<div class="logo"> <a href=""><img src="./images/logo-color.svg" alt=""></a></div>
+							<div class="img-bg"><img src="./images/login-bg.png" alt=""></div>
+						</div>
+						<div class="wrapper-right"> 
+							<div class="wrapper-content"> 
+								<div class="wrap-header d-flex">
+									<div class="title-login"> 
+										<p>Chào mừng bạn đến với </p>
+										<h1>360° Customer View</h1>
+									</div>
 								</div>
-								<div class="panel" id="form-2">
-									<p>2</p>
-									<form class="wrap-form" action="">
-										<div class="form-group">
-											<input class="form-control" type="text" placeholder="Quý khách nhập từ 3 - 10 ký tự">
-											<button class="btn btn-default"> <span>Tìm</span></button><a class="sort" href="">
-												 Giá<em class="material-icons">arrow_downward</em></a><span class="desc">Nhập *123 để tìm các số có đuôi 123</span>
-										</div>
-										<div class="form-group">
-											<input id="ratio-4" type="radio" name="sendrequest" value="">
-											<label for="ratio-4"> 
-												<p>Số tài khoản&nbsp;<b>99999987654321</b></p>
-											</label>
-											<div class="price">
-												<p>1,200,000,000 VND &nbsp;</p><span>1,100,000,000 VND</span>
-												<div class="hot-deal">Giá sốc</div>
-											</div>
-										</div>
-										<div class="form-group">
-											<input id="ratio-5" type="radio" name="sendrequest" value="">
-											<label for="ratio-5"> 
-												<p>Số tài khoản&nbsp;<b>99999987654321</b></p>
-											</label>
-											<div class="price">
-												<p>1,200,000,000 VND &nbsp;</p><span>0 VND</span>
-												<div class="hot-deal">Giá sốc</div>
-											</div>
-										</div>
-										<div class="form-group">
-											<input id="ratio-6" type="radio" name="sendrequest" value="">
-											<label for="ratio-6"> 
-												<p>Số tài khoản &nbsp;<b>99999987654321</b></p>
-											</label>
-											<div class="price">
-												<p>1,200,000,000 VND &nbsp;</p><span>0 VND</span>
-												<div class="hot-deal">Giá sốc</div>
-											</div>
-										</div>
-									</form>
-								</div>
+								<form class="wrap-form" action="">
+									<div class="form-group d-flex"> 
+										<label for="">Tên Đăng Nhập</label>
+										<input class="form-control" type="text" placeholder="Nhập tên user">
+									</div>
+									<div class="form-group d-flex"> 
+										<label for="">Nhập Mật khẩu</label>
+										<input class="form-control" id="password" type="password" placeholder="Nhập mật khẩu">
+										<div class="icon" id="showPassword"></div>
+									</div>
+									<button class="btn btn-login"> <span>Đăng Nhập</span></button><a class="forgot-password" href="">Bạn quên mật khẩu ?</a>
+								</form>
 							</div>
-						</div><a class="btn btn-default text-center" href=""><span>Tiếp tục</span></a>
-					</div>
-				</div>
-				<div class="popup-detail infor-checkout" id="popup-infor-checkout">
-					<div class="popup-heading">
-						<h1 class="big-title">Thông tin tài khoản mở mới </h1>
-						<button class="btn close" data-fancybox-close> <em class="material-icons">close</em></button>
-					</div>
-					<div class="popup-body">
-						<div class="block-content"> 
-							<table> 
-								<tr>
-									<td> 
-										<p>Loại Tài khoản</p>
-									</td>
-									<td> 
-										<h5>TKTT Trực tuyến</h5>
-									</td>
-								</tr>
-								<tr>
-									<td> 
-										<p>Số Tài khoản</p>
-									</td>
-									<td> 
-										<h5>999999938801939</h5>
-									</td>
-								</tr>
-								<tr>
-									<td> 
-										<p>Loại tiền</p>
-									</td>
-									<td> 
-										<h5>VND</h5>
-									</td>
-								</tr>
-								<tr>
-									<td> 
-										<p>Giá niêm yết</p>
-									</td>
-									<td> 
-										<h5>2,500,000 VND</h5>
-									</td>
-								</tr>
-								<tr>
-									<td colspan="2">
-										<form>
-											<div class="form-group">
-												<input class="form-control coupon" type="text" name="" placeholder="Mã voucher (nếu có)">
-												<button class="btn btn-apply">Áp dụng</button>
-											</div>
-										</form>
-									</td>
-								</tr>
-								<tr>
-									<td> 
-										<p>Giá đã giảm</p>
-									</td>
-									<td> 
-										<h5>2,500,000 VND</h5>
-									</td>
-								</tr>
-								<tr>
-									<td> 
-										<p>VAT</p>
-									</td>
-									<td> 
-										<h5>250,000 VND</h5>
-									</td>
-								</tr>
-								<tr>
-									<td> 
-										<p>Số tiền phải thanh toán</p>
-									</td>
-									<td> 
-										<h5>2,750,000 VND</h5>
-									</td>
-								</tr>
-								<tr>
-									<td colspan="2"> 
-										<form action="" method="method">
-											<div class="form-group">
-												<label for="">Mã giới thiệu (nếu có)</label>
-												<input class="form-control coupon" type="text" name="" placeholder="" value="Chung 56874">
-											</div>
-										</form>
-									</td>
-								</tr>
-								<tr>
-									<td colspan="2"> 
-										<form action=""> 
-											<div class="form-group">
-												<label for="">Chi nhánh/pGD quản lý tài khoản</label>
-												<select name=""> 
-													<option value="">CN Sài Gòn</option>
-													<option value="CN Sài Gòn">CN Sài Gòn</option>
-												</select>
-											</div>
-										</form>
-									</td>
-								</tr>
-							</table>
-						</div>
-						<div class="block-content"> 
-							<table class="source-account">
-								<tr> 
-									<td colspan="2"> 
-										<p>Tài khoản nguồn</p>
-										<form action=""> 
-											<div class="form-group">
-												<select name=""> 
-													<option value="068100001234567">068100001234567</option>
-													<option value="068100001234567">068100001234567</option>
-												</select>
-											</div>
-											<div class="form-group">
-												<p>Số dư khả dụng:</p>
-												<h5>5,000,000 VND</h5>
-											</div>
-										</form>
-									</td>
-								</tr>
-							</table>
-						</div>
-						<div class="agree">
-							<input id="agree" type="checkbox" name="agree">
-							<label for="agree">Tôi đã đọc và đồng ý với các <a href=""> Điều khoản và điều kiện </a>Hợp đồng mở Tài khoản trực tuyến</label>
 						</div>
 					</div>
-					<button class="btn btn-default"> <span>Tiếp tục</span></button>
-				</div>
-				<div class="popup-alert" id="pupopAlert" style="display: none;">
-					<div class="popup-headding"> 
-						<h1 class="title">Thông báo</h1>
-						<button class="btn close" data-fancybox-close> <em class="material-icons">close</em></button>
-					</div>
-					<div class="popup-body"> 
-						<div class="alert">
-							<p>Số tài khoản không còn trong Kho số. </p>
-							<p>Quý khách vui lòng chọn số khác.</p>
-						</div>
-						<div class="form-group">
-							<label for="name">Chuyển tiếp</label>
-							<input class="form-control" type="name" name="name" placeholder="khoata12@hdbank.com.vn" value="khoata12@hdbank.com.vn"><img class="icon" src="./images/icons/user-to1.svg" alt="">
-						</div>
-					</div>
-					<div class="popup-footer"><a href="">Đồng ý</a></div>
-				</div>
-				<div class="popup-detail success" id="popup-success">
-					<div class="popup-header"><a href=""> <img src="./images/HDBank.svg" alt=""></a>
-						<figure> <img src="./images/icons/success.png" alt=""></figure>
-						<h3>Tạo Số tài khoản thành công</h3>
-					</div>
-					<div class="popup-main">
-						<table> 
-							<tr> 
-								<td> 
-									<p>Loại Tài khoản</p>
-								</td>
-								<td>
-									<p>TKTT Trực tuyến</p>
-								</td>
-							</tr>
-							<tr>
-								<td> 
-									<p>Số Tài khoản</p>
-								</td>
-								<td>
-									<p>999999938801939</p>
-								</td>
-							</tr>
-							<tr>
-								<td> 
-									<p>Loại tiền</p>
-								</td>
-								<td>
-									<p>VND</p>
-								</td>
-							</tr>
-							<tr>
-								<td> 
-									<p>Giá niêm yết</p>
-								</td>
-								<td>
-									<p>2,500,000 VND</p>
-								</td>
-							</tr>
-							<tr>
-								<td> 
-									<p>Giá đã giảm</p>
-								</td>
-								<td>
-									<p>2,500,000 VND</p>
-								</td>
-							</tr>
-							<tr>
-								<td> 
-									<p>VAT</p>
-								</td>
-								<td>
-									<p>250,000 VND </p>
-								</td>
-							</tr>
-							<tr>
-								<td> 
-									<p>Số tiền phải thanh toán</p>
-								</td>
-								<td>
-									<p>2,750,000 VND</p>
-								</td>
-							</tr>
-							<tr>
-								<td> 
-									<p>Mã giới thiệu (Nếu có)</p>
-								</td>
-								<td>
-									<p>Chung123456</p>
-								</td>
-							</tr>
-							<tr>
-								<td> 
-									<p>Chi nhánh/PGD quản lý</p>
-								</td>
-								<td>
-									<p>CN Sài Gòn</p>
-								</td>
-							</tr>
-							<tr>
-								<td> 
-									<p>Tài khoản nguồn</p>
-								</td>
-								<td>
-									<p>068100001234567</p>
-								</td>
-							</tr>
-						</table><a class="btn btn-default" href=""> <span>Về trang chủ</span></a>
-					</div>
-				</div>
-				<div class="popup-detail success" id="popup-error">
-					<div class="popup-header"><a href=""> <img src="./images/HDBank.svg" alt=""></a>
-						<figure> <img src="./images/icons/error.svg" alt=""></figure>
-						<h2 class="text-center">Yêu cầu thực hiện không <br>thành công</h2>
-					</div>
-					<div class="popup-main"><a class="btn btn-default" href=""> <span>Về trang chủ</span></a></div>
-				</div>
+				</section>
 			</div>
 		</main>
 		<footer> 
